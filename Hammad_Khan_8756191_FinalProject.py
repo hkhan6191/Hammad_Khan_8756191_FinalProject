@@ -19,5 +19,20 @@ while True:
 
     randomNum = random.randint(0,2)
     comChoice = choicesList[randomNum]
-
     print("Computer chose: ", comChoice) 
+
+    if userChoice == "Rock" and comChoice == "Scissors":
+        print("Rock beats Scissors")
+        userWins += 1
+
+    elif userChoice == "Paper" and comChoice == "Rock":
+        print("Paper beats Rock")
+        userWins += 1
+
+    elif userChoice == "Scissors" and comChoice == "Paper":
+        print("Scissors beats Paper")
+        userWins += 1
+
+    else:
+        print(comChoice, "beats", userChoice)
+        compWins += 1 
