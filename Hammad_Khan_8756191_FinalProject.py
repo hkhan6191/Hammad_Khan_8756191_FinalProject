@@ -25,17 +25,19 @@ while True:
     comChoice = choicesList[randomNum]
     print("Computer chose: ", comChoice) 
 
-    if userChoice == "rock" and comChoice == "scissors":
+    def winMessage():
         print("You win!")
+        global userWins
         userWins += 1
+
+    if userChoice == "rock" and comChoice == "scissors":
+        winMessage()
 
     elif userChoice == "paper" and comChoice == "rock":
-        print("You win!")
-        userWins += 1
+        winMessage()
 
     elif userChoice == "scissors" and comChoice == "paper":
-        print("You win!")
-        userWins += 1
+        winMessage()
 
     elif userChoice == comChoice:
         print("Tie!")
@@ -49,4 +51,4 @@ print("The computer won", compWins, "games.")
 
 print("")
 
-print("See you later!") 
+print("See you later!")
