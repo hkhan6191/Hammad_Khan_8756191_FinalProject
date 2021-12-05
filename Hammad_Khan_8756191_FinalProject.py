@@ -6,12 +6,12 @@ compWins = 0
 
 choicesList = ["rock", "paper", "scissors"]
 
-print("Welcome to Rock-Paper-Scissors! Your goal is to beat the computer. Remember: Rock beats Scissors, Paper beats Rock, and Scissors beat Paper.")
+print("Welcome to Rock-Paper-Scissors! Your goal is to beat the computer. Remember: rock beats scissors, paper beats rock, and scissors beats paper.")
 
 print("")
 
 while True:
-    userChoice = input("Enter in rock, paper, or scissors as your choice. Enter in 'end' if you wish to finish the game.")
+    userChoice = input("Enter in rock, paper, or scissors as your choice. Enter in 'end' if you wish to finish the game: ")
     
     if userChoice == "end":
         break
@@ -46,6 +46,8 @@ while True:
         print("You lose!")
         compWins += 1 
 
+print("Great games! Here is the recap:")
+print("")
 print("You won", userWins, "games.")
 print("The computer won", compWins, "games.")
 
